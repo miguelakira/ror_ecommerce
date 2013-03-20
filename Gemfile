@@ -28,7 +28,8 @@ gem "jquery-rails"
 gem 'json', '~>1.7.7'
 
 gem 'nested_set', '~> 1.7.0'
-gem "nifty-generators", :git => 'git://github.com/drhenner/nifty-generators.git'
+#gem "nifty-generators", :git => 'git://github.com/drhenner/nifty-generators.git'
+gem "nifty-generators", :git => 'https://github.com/drhenner/nifty-generators.git'
 gem 'nokogiri', '~> 1.5.0'
 gem 'paperclip', '~> 3.0'
 gem 'prawn', '~> 0.12.0'
@@ -56,7 +57,11 @@ group :development do
   gem "autotest-rails-pure"
 
   gem "rails-erd"
-  gem "debugger"
+
+  #gem "debugger"
+  gem 'debugger-ruby_core_source', :git => 'https://github.com/cldwalker/debugger-ruby_core_source.git'
+
+
 
   # YARD AND REDCLOTH are for generating yardocs
   gem 'yard'
@@ -66,6 +71,7 @@ group :test, :development do
   gem 'capybara', "~> 1.1"#, :git => 'git://github.com/jnicklas/capybara.git'
   gem 'launchy'
   gem 'database_cleaner'
+  gem 'therubyracer'
 end
 
 group :test do
