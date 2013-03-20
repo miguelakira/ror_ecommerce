@@ -79,7 +79,7 @@
                         <%= f.select :quantity, [1,2,3,4,5,6], {:include_blank => true}, {:class => 'one'} %>
                         <div class='add_to_cart_wrapper '>
                           <% unless @product.active_variants.empty? %>
-                            <%= link_to 'Add to Cart', '#', :id => 'submit_add_to_cart', :class => 'button' %>
+                            <%= link_to t('add_to_cart'), '#', :id => 'submit_add_to_cart', :class => 'button' %>
                           <% end %>
                         </div>
                     <% end %>
